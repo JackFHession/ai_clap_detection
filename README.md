@@ -23,4 +23,4 @@ when it hears something similar enough, it says “clap detected.”
 ## about
 
 made by a @jackfhession who likes tinkering with ai.  
-for other projects, check [franklindynamics on github](https://github.com/Franklin-Dynamics) and also jack [jack](https://github.com/JackFHession).
+for other projects, check [franklindynamics on github](https://github.com/Franklin-Dynamics) and also [jack, the ceo](https://github.com/iantosshrine).
