@@ -4,7 +4,7 @@ a simple clap detector using google’s yamnet model. it learns your clap sounds
 
 ## how to use
 
-1. add some `.wav` files of your claps into `./clap_detector/train_clips/`  
+1. add some `.wav` files of your claps into `./audio_files/`  
 2. run `python train.py` to train the model  
 3. run `python main.py` to start detecting claps  
 
@@ -18,9 +18,9 @@ when it hears something similar enough, it says “clap detected.”
 
 - best if you record claps in a quiet place  
 - if it detects too much or too little, try adjusting the margin in `train.py`  
-- the model is saved in `./ltm/clap_model.npz` so keep it safe if you want to reuse it
+- the model is saved in `./clap_model.npz` so keep it safe if you want to reuse it
 
 ## about
 
-made by a random birmingham coder who likes tinkering with ai.  
-for other projects, check [franklindynamics on github](https://github.com/FranklinDynamics).
+made by a @jackfhession who likes tinkering with ai.  
+for other projects, check [franklindynamics on github](https://github.com/Franklin-Dynamics) and also jack [jack](https://github.com/JackFHession).
