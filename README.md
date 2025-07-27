@@ -1,26 +1,28 @@
 # clap detector
 
-a simple clap detector using google’s yamnet model. it learns your clap sounds from a few example recordings then listens for claps live.
+a simple clap detector using a custom pytorch model. it listens to your microphone in real time and detects claps using a trained convolutional network.
 
 ## how to use
 
-1. add some `.wav` files of your claps into `./audio_files/`  
-2. run `python train.py` to train the model  
-3. run `python main.py` to start detecting claps  
+1. train the model using `train.py` (coming soon, or use the provided `clap_detector.pt`)  
+2. run `python main.py` to test for a single clap  
+3. or import and call `infer_clap(model, processor, device)` inside your own code  
+4. optionally, integrate into your voice assistant as a wakeword trigger
 
 ## how it works
 
-yamnet converts audio into embeddings (basically number summaries of sounds).  
-the program averages your training claps to get a “clap profile.”  
-when it hears something similar enough, it says “clap detected.”
+the program converts audio into mel spectrograms (like images of sound).  
+a small neural network classifies whether the spectrogram contains a clap.  
+if the probability is high enough, it says “clap detected.”
 
 ## tips
 
-- best if you record claps in a quiet place  
-- if it detects too much or too little, try adjusting the margin in `train.py`  
-- the model is saved in `./clap_model.npz` so keep it safe if you want to reuse it
+- best if you're in a quiet environment with a clear clap sound  
+- clap volume, timing, and background noise can affect detection accuracy  
+- model is saved as `./ltm/clap_detector.pt` — keep it safe and load it during runtime
 
 ## about
 
-made by a @jackfhession who likes tinkering with ai.  
-for other projects, check [franklindynamics on github](https://github.com/Franklin-Dynamics) and also [jack, the ceo](https://github.com/iantosshrine).
+made by a @JackHession who likes tinkering with ai.  
+for other projects, check [franklindynamics on github](https://github.com/Hession-Dynamics) and also [jack, the ceo](https://github.com/jackhession).
+
