@@ -24,5 +24,5 @@ if the probability is high enough, it says “clap detected.”
 ## about
 
 made by a @JackHession who likes tinkering with ai.  
-for other projects, check [franklindynamics on github](https://github.com/Hession-Dynamics) and also [jack, the ceo](https://github.com/jackhession).
+for other projects, check [hession dynamics on github](https://github.com/Hession-Dynamics) and also [jack, the ceo](https://github.com/jackhession).
 
